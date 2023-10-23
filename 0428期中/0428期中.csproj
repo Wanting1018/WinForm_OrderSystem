@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0F64B89-D33C-4EF2-B00F-87262D310570}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_0428期中</RootNamespace>
+    <AssemblyName>0428期中</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer.Designer.cs">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderDetails.Designer.cs">
+      <DependentUpon>FormOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOrderLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrderLists.Designer.cs">
+      <DependentUpon>FormOrderLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVar.cs" />
+    <Compile Include="my_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>my_dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="my_dbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>my_dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Persons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Persons.Designer.cs">
+      <DependentUpon>Persons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product_Details.Designer.cs">
+      <DependentUpon>Product_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer.resx">
+      <DependentUpon>FormCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderDetails.resx">
+      <DependentUpon>FormOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrderLists.resx">
+      <DependentUpon>FormOrderLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persons.resx">
+      <DependentUpon>Persons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product_Details.resx">
+      <DependentUpon>Product_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="my_dbDataSet.xsc">
+      <DependentUpon>my_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="my_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>my_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="my_dbDataSet.xss">
+      <DependentUpon>my_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="my_dbDataSet1.xsc">
+      <DependentUpon>my_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="my_dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>my_dbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="my_dbDataSet1.xss">
+      <DependentUpon>my_dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13e668582d7bff8e316b784844105cbf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9a90975a3ebc5e071dc84ce66a4ed1f7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\df63709a6f8aa35d30de6103894548d9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a9de68862d5e6b3ad45cd791a95abb48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9d4367716234e5d682480dd63d02a281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9d4367716234e5d682480dd63d02a2811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03d7f432274457dc02ae375dd16b04de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b33936b6d2d670455720aab7aae9cb62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9a90975a3ebc5e071dc84ce66a4ed1f71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5f3f860c5810fc330da0d551e4dca329 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\未命名22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0427.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5e43ccfc5908d608266d3453d5976a1b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eb0e7992f5d4d81f774ee1b67930d3a8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1b80bc0b21264928992ad16f9bc5dc29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3cffa4b6e68369a01fc4aac04cb6e49e.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
